@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <style>
+        body {
+            background-image: url('https://r4.wallpaperflare.com/wallpaper/999/290/481/cuts-raspberry-strawberry-banana-wallpaper-09aa1b74ec65468b30dd68680a3c0d6c.jpg');
+            background-size:cover;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: lime;
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 0;
+            background-color: black;
+            border-bottom: 5px solid lime;
+        }
+        form {
+            max-width:850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:black;
+            color:white;
+            opacity:0.8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            display: block;
+            margin-bottom:5px;
+            font-size: 1.5rem;
+            color:white;
+            text-align:center;
+        }
+        
+        input[type="text"] {
+            width: 98%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius:8px;
+            
+        }
+        
+        h2 {
+            background-color:black;
+            color:lime;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        
+         input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: lime;
+        }
+           input[type="reset"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Recommendation</h1><br>
+    <form method="POST">
+        <label for="N">Enter N value</label>
+        <input type="text" id="N" name="N"><br>
+        <label for="P">Enter P Value</label>
+        <input type="text" id="P" name="P"><br>
+        <label for="K">Enter K value</label>
+        <input type="text" id="K" name="K"><br>
+        <label for="temperature">Enter Temperature</label>
+        <input type="text" id="temperature" name="temperature"><br>
+        <label for="humidity">Enter Humidity</label>
+        <input type="text" id="humidity" name="humidity"><br>
+        <label for="pH">Enter PH Value</label>
+        <input type="text" id="pH" name="pH"><br>
+        <label for="rainfall">Enter Rainfall MM</label>
+        <input type="text" id="rainfall" name="rainfall"><br>
+        <input type="submit" value="Submit"> &nbsp &nbsp <input type="reset" value="Clear">
+    </form>
+
+    {% if prediction %}
+    <h2><B>Go For: {{ prediction }}</B></h2>
+    {% endif %}
+</body>
+</html>
+

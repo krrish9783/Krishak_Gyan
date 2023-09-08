@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('m.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.option {
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #0056b3;
+}
+</style>
+<script>
+function mov(v) {
+  if(v==1) {
+  window.location='http://127.0.0.1:5000';
+  }
+  else {
+  alert("We are working on that")
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="options">
+    <div class="option" target="_self" onclick="mov(1)">Crop Prediction</div>
+    <div class="option" target="_self" onclick="mov(2)">Fertilizer Recommendation</div>
+    <div class="option" target="_self" onclick="mov(3)">State Crops</div>
+  </div>
+</div>
+</body>
+</html>
+

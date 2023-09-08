@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url('g.jpg');
+  background-size:cover;
+}
+
+.f {
+  position: absolute;
+  margin-top:25%;
+  max-height:50%;
+}
+
+.div1 {
+  background-color: #fff;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  margin-top:5%;
+  height: 45%;
+  width: 30%;
+  margin-left:-5%; /* Adjust the margin as needed */
+}
+
+h1 {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-image: linear-gradient(to right, #ff9933, #ff9933 33.33%, white 33.33%, white 66.66%, #138808 66.66%);
+  background-size: 100% 100%;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+ 
+}
+
+.sub {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sub:hover {
+  background-color: lime;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: Times New Roman;
+}
+
+label {
+  font-size: 30px;
+  font-family: Times New Roman;
+}
+
+h2 {
+  background-color: lime;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.rightimg {
+  position: absolute;
+  right: 0px; /* Adjust the position as needed */
+  top: 50%;
+  max-height: 70%; /* Adjust the size as needed */
+}
+
+
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: red;
+        }
+
+.bt:hover {
+  background-color: yellow;
+}
+
+</style>
+<script>  
+
+</script>
+</head>
+<body>
+
+<div class="sticky-header">
+  <h1>Welcome to KrishakGyan</h1>
+ 
+</div>
+<img class="f" src="ff.png">
+
+<div class="container">
+  <div class="div1">
+    <h2>Login to Your Account</h2>
+    <form name="myform" method="post" action="login.php">
+    <label for="user">Username or Email</label><br><br>
+    <input type="text" id="user" name="user" placeholder="eg. krrish_xyz@mail.com"><br><br>
+    <label for="pass">Password</label><br><br>
+    <input type="password" id="pass" name="pass" placeholder="*************"><br><br>
+    <input type="reset" class="clear" value="Clear">&nbsp;
+    <input class="sub" type="submit" value="Sign In"><br><br>
+    <a href="register.html" target="_self">New Visitor?</a>&nbsp;&nbsp;&nbsp;
+    <a href="send.php" target="_blank">Forget password ?</a><br><br>
+    <hr><br>
+</form>
+
+  </div>
+</div>
+<img class="rightimg" src="ind.png">
+<div class="footer">
+  <p>Developed by: Kishnu, Syed Riyan, Bidhata, Ahmed<br>
+  Guided by: Dr. K. Kavitha Jain<br>
+  Email: kishnukumaryadav783@gmail.com, Phone: +919173551395</p>
+</div>
+
+</body>
+</html>
+

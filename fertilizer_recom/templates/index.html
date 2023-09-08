@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fertilizer Recommendation</title>
+</head>
+<body>
+    <h1>Fertilizer Recommendation</h1>
+    <form method="POST" action="/recommend">
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" name="temperature" required><br>
+
+        <label for="humidity">Humidity (%):</label>
+        <input type="number" name="humidity" required><br>
+
+        <label for="soilMoisture">Soil Moisture (%):</label>
+        <input type="number" name="soilMoisture" required><br>
+
+        <label for="soilType">Soil Type:</label>
+        <select name="soilType" required>
+            <option value="0">Sandy</option>
+            <option value="1">Loamy</option>
+            <option value="2">Black</option>
+            <option value="3">Red</option>
+            <option value="4">Clayey</option>
+        </select><br>
+
+        <label for="cropType">Crop Type:</label>
+<select name="cropType" required>
+    <option value="Maize">Maize</option>
+    <option value="Sugarcane">Sugarcane</option>
+    <option value="Cotton">Cotton</option>
+    <option value="Tobacco">Tobacco</option>
+    <option value="Paddy">Paddy</option>
+    <option value="Barley">Barley</option>
+    <option value="Wheat">Wheat</option>
+    <option value="Millets">Millets</option>
+    <option value="Oil seeds">Oil seeds</option>
+    <option value="Pulses">Pulses</option>
+    <option value="Ground Nuts">Ground Nuts</option>
+</select><br>
+
+        <label for="nitrogen">Nitrogen:</label>
+        <input type="number" name="nitrogen" required><br>
+
+        <label for="potassium">Potassium:</label>
+        <input type="number" name="potassium" required><br>
+
+        <label for="phosphorous">Phosphorous:</label>
+        <input type="number" name="phosphorous" required><br>
+
+        <button type="submit">Get Fertilizer</button>
+    </form>
+</body>
+</html>
+
