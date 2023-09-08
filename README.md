@@ -2,8 +2,20 @@
 # Krishak_Gyan: Your Agricultural Companion 🌱
 
 Krishak_Gyan is a comprehensive agricultural information and recommendation system designed to empower farmers and enthusiasts with data-driven insights. From crop predictions and recommendations to detailed information about crops based on location and season, Krishak_Gyan has you covered. Additionally, it offers personalized fertilizer recommendations to optimize crop yield.
-
-![Screenshot of Krishak_Gyan](https://your-image-url.com/screenshot.png)
+## home
+![Screenshot of Krishak_Gyan](img/ahome.png)
+## home2
+![Screenshot of Krishak_Gyan](img/ahome2.png)
+## database
+![Screenshot of Krishak_Gyan](img/adb.png)
+## hregistration
+![Screenshot of Krishak_Gyan](img/areg.png)
+## hsucess
+![Screenshot of Krishak_Gyan](img/asucess.png)
+## otp
+![Screenshot of Krishak_Gyan](img/aotp.png)
+## home
+![Screenshot of Krishak_Gyan](img/acrop.png)
 
 ## Features 🚀
 
